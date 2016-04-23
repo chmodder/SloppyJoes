@@ -21,14 +21,13 @@
         <TextBlock Grid.Row="0" FontSize="42" Text="Welcome To Sloppy Joes"/>
         <StackPanel Grid.Row="1" x:Name="StkPnlPageLayOut">
 
+           
             <StackPanel Orientation="Horizontal" Margin="0,0,20,0">
                 <StackPanel>
                     <TextBlock Style="{StaticResource BodyTextBlockStyle}"
-                               Text="Number of items" Margin="0,0,0,10"/>
+                               Text="Number of items (1-10)" Margin="0,0,0,10"/>
                     <TextBox x:Name="TbxNumberofItems" Width="100" HorizontalAlignment="Left"
-                             Text="{Binding NumberOfItems, Mode=TwoWay}"/>
-                    <!--<TextBox x:Name="TbxNumberofItems" Width="100" HorizontalAlignment="Left"
-                             PlaceholderText="Number of items"/>-->
+                             Text="{Binding NumberOfItems, Mode=TwoWay}" PlaceholderText="integer"/>
                 </StackPanel>
                 <Button x:Name="BtnNewMenu" VerticalAlignment="Bottom" Content="Make New Menu" Margin="0,0,20,0" Command="{Binding CreateMenuCommand}" CommandParameter="{Binding ElementName=TbxNumberofItems}"/>
             </StackPanel>

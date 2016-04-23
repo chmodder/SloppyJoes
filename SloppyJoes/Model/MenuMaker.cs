@@ -69,6 +69,12 @@ namespace SloppyJoes.Model
         }
         public void UpdateMenu()
         {
+            //Prevention of making more than 10 menus
+            if (NumberOfItems > 10)
+            {
+                NumberOfItems = 10;
+            }
+
             Menu.Clear();
             for (int i = 0; i < NumberOfItems; i++)
             {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace SloppyJoes.Model
+namespace SloppyJoes
 {
     class RelayCommand : ICommand
     {

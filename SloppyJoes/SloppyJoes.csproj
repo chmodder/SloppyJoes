@@ -97,7 +97,7 @@
     </Compile>
     <Compile Include="Model\MenuItem.cs" />
     <Compile Include="Model\MenuMaker.cs" />
-    <Compile Include="Model\RelayCommand.cs" />
+    <Compile Include="RelayCommand.cs" />
     <Compile Include="ViewModel\MenuViewModel.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
